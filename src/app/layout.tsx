@@ -18,7 +18,7 @@ const bigShoulders = Big_Shoulders({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://s42.site"),
+  metadataBase: new URL("https://vxlancity.github.io/portfolio"),
   title: "Vxlancity | Full Stack Developer",
   description:
     "Personal Dev Portfolio of Vxlancity - Crafting digital experiences with precision and passion.",
