@@ -18,22 +18,26 @@ const bigShoulders = Big_Shoulders({
   weight: ["400", "700", "900"],
 });
 
+const basePath =
+  process.env.NEXT_PUBLIC_BASE_PATH ||
+  (process.env.NODE_ENV === "production" ? "/portfolio" : "");
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vxlancity.github.io/portfolio"),
+  metadataBase: new URL("https://vxlancity.github.io"),
   title: "Vxlancity | Full Stack Developer",
   description:
     "Personal Dev Portfolio of Vxlancity - Crafting digital experiences with precision and passion.",
   icons: {
-    icon: "/emojis/kuromi_love.gif",
-    shortcut: "/emojis/kuromi_love.gif",
-    apple: "/emojis/kuromi_love.gif",
+    icon: `${basePath}/emojis/kuromi_love.gif`,
+    shortcut: `${basePath}/emojis/kuromi_love.gif`,
+    apple: `${basePath}/emojis/kuromi_love.gif`,
   },
   openGraph: {
-    images: ["/thumbnail/page.png"],
+    images: [`${basePath}/thumbnail/page.png`],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/thumbnail/page.png"],
+    images: [`${basePath}/thumbnail/page.png`],
   },
 };
 

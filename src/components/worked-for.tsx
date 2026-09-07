@@ -79,7 +79,7 @@ export default function WorkedFor() {
                   style={{ background: person.color }}
                 />
                 <Image
-                  src={`/image/pfp/${person.file}`}
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/image/pfp/${person.file}`}
                   alt={person.name}
                   width={112}
                   height={112}
