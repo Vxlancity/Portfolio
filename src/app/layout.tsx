@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "@/components/footer";
 import SmokeBg from "@/components/smoke-bg";
 import DevBanner from "@/components/dev-banner";
+import IntroLoader from "@/components/intro-loader";
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
@@ -95,6 +96,7 @@ export default function RootLayout({
         </div>
 
         <div className="relative z-10 min-h-screen flex flex-col">
+          <IntroLoader />
           <DevBanner />
           <main id="main" className="flex-1">
             {children}
