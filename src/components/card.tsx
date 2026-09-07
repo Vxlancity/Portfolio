@@ -109,7 +109,12 @@ export default function Card({
           {image && (
             /* eslint-disable-next-line @next/next/no-img-element */
             <img
-              src={image}
+              src={
+                image.startsWith("/") &&
+                !image.startsWith(process.env.NEXT_PUBLIC_BASE_PATH || "")
+                  ? `${process.env.NEXT_PUBLIC_BASE_PATH || ""}${image}`
+                  : image
+              }
               alt=""
               aria-hidden="true"
               className="project-emoji h-6 w-6 object-contain"

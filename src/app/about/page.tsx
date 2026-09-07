@@ -114,7 +114,7 @@ export default function AboutPage() {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/emojis/kuromi_laugh.gif"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/emojis/kuromi_laugh.gif`}
             alt=""
             aria-hidden="true"
             className="w-12 h-12 object-contain shrink-0"

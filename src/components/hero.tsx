@@ -30,7 +30,7 @@ export default function Hero() {
         <div className="flex items-start gap-3 max-w-2xl">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/emojis/kuromi_hey.gif"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/emojis/kuromi_hey.gif`}
             alt=""
             aria-hidden="true"
             className="w-5 h-5 object-contain shrink-0 mt-1.5"

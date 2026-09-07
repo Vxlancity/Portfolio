@@ -323,7 +323,7 @@ export default function IntroLoader() {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/emojis/kuromi_love.gif"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/emojis/kuromi_love.gif`}
               alt="Kuromi"
               style={{
                 width: "42px",
